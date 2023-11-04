@@ -10,8 +10,8 @@ This repo contains golang Lectures and practises for devops. I will add new stuf
 
 **Notes**
 
-1. In order to run files, type 'go run <file name>'
-2. In order to create modules 'go mod init <module name>'
+1. In order to run files, type `go run <file name>`
+2. In order to create modules `go mod init <module name>`
 3. Modules contains packages.
 4. // is the way to add comments.
 5. 
