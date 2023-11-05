@@ -1,8 +1,9 @@
 package main
 
 import (
-	"basics/conditionals"
 	"basics/variables"
+	// "basics/conditionals"
+	"basics/loops"
 	"fmt"
 )
 
@@ -12,7 +13,9 @@ func main() {
 
 	//VariablesFunction()
 
-	conditionals.CheckCondition()
+	//conditionals.CheckCondition()
+
+	loops.YearCalculator()
 
 }
 
