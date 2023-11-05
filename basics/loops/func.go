@@ -8,7 +8,10 @@ func YearCalculator() {
 
 	allowed_age := 18
 
-	young_person := 11
+	var young_person int
+
+	fmt.Println("How old are you, buddy?")
+	fmt.Scanln(&young_person)
 
 	for young_person <= allowed_age {
 
