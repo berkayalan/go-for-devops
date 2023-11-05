@@ -5,3 +5,4 @@
 - Variables
 - Conditionals
 - Loops
+- Arrays
