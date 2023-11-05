@@ -1,11 +1,22 @@
 package main
 
 import (
+	"basics/conditionals"
 	"basics/variables"
 	"fmt"
 )
 
 func main() {
+
+	// We can call another functions like that
+
+	//VariablesFunction()
+
+	conditionals.CheckCondition()
+
+}
+
+func VariablesFunction() {
 
 	// This is how we invoke a function in a package
 
