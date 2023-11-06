@@ -18,7 +18,9 @@ func main() {
 
 	//loops.YearCalculator()
 
-	arrays.CreateArray()
+	//arrays.CreateArray()
+
+	arrays.CreateMultidimensionalArray()
 
 }
 
