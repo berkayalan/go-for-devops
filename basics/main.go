@@ -30,9 +30,11 @@ func main() {
 
 	//functions.CreateFunction()
 
-	name, birthyear, mail, country := functions.CallMultireturn()
+	//name, birthyear, mail, country := functions.CallMultireturn()
+	//fmt.Println(name, birthyear, mail, country)
 
-	fmt.Println(name, birthyear, mail, country)
+	functions.CreateVariadic("John", "Mark", "Berkay")
+	functions.CreateVariadic("Kelvin", "Dimitar", "Berkay", "Alex", "Mauro")
 
 }
 
