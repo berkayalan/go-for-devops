@@ -5,7 +5,8 @@ import (
 	// "basics/conditionals"
 	//"basics/loops"
 	//"basics/arrays"
-	"basics/slices"
+	//"basics/slices"
+	"basics/functions"
 	"fmt"
 )
 
@@ -25,7 +26,9 @@ func main() {
 
 	//slices.CreateSlice()
 
-	slices.CreateSliceFromArray()
+	//slices.CreateSliceFromArray()
+
+	functions.CreateFunction()
 
 }
 

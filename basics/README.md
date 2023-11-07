@@ -6,3 +6,5 @@
 - Conditionals
 - Loops
 - Arrays
+- Slices
+- Functions
