@@ -13,12 +13,22 @@ func CreateFunction() {
 
 	fmt.Println("This is a main function")
 
-	SubFunctions()
+	fmt.Println("What's your name?")
+
+	var name string
+
+	fmt.Scanln(&name)
+
+	user_name := Greetings(name)
+
+	fmt.Println("\nUser Name", user_name)
 
 }
 
-func SubFunctions() {
+func Greetings(name string) string { // We give arguments with this way. We also return a string.
 
-	fmt.Println("This is a sub function")
+	fmt.Printf("Welcome %v , We learn golang here!!!", name)
+
+	return name // We return the name for future usage
 
 }

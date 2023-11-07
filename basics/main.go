@@ -28,7 +28,11 @@ func main() {
 
 	//slices.CreateSliceFromArray()
 
-	functions.CreateFunction()
+	//functions.CreateFunction()
+
+	name, birthyear, mail, country := functions.CallMultireturn()
+
+	fmt.Println(name, birthyear, mail, country)
 
 }
 
