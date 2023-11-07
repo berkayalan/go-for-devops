@@ -4,7 +4,8 @@ import (
 	"basics/variables"
 	// "basics/conditionals"
 	//"basics/loops"
-	"basics/arrays"
+	//"basics/arrays"
+	"basics/slices"
 	"fmt"
 )
 
@@ -20,7 +21,11 @@ func main() {
 
 	//arrays.CreateArray()
 
-	arrays.CreateMultidimensionalArray()
+	//arrays.CreateMultidimensionalArray()
+
+	//slices.CreateSlice()
+
+	slices.CreateSliceFromArray()
 
 }
 
