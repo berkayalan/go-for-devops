@@ -34,7 +34,9 @@ func main() {
 	//fmt.Println(name, birthyear, mail, country)
 
 	functions.CreateVariadic("John", "Mark", "Berkay")
-	functions.CreateVariadic("Kelvin", "Dimitar", "Berkay", "Alex", "Mauro")
+
+	names := []string{"Kelvin", "Dimitar", "Berkay", "Alex", "Mauro"}
+	functions.CreateVariadic(names...) // 3 dots are important here.
 
 }
 
