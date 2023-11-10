@@ -8,3 +8,4 @@
 - Arrays
 - Slices
 - Functions
+- Maps

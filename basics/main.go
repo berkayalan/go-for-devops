@@ -6,7 +6,8 @@ import (
 	//"basics/loops"
 	//"basics/arrays"
 	//"basics/slices"
-	"basics/functions"
+	//"basics/functions"
+	"basics/maps"
 	"fmt"
 )
 
@@ -33,10 +34,14 @@ func main() {
 	//name, birthyear, mail, country := functions.CallMultireturn()
 	//fmt.Println(name, birthyear, mail, country)
 
-	functions.CreateVariadic("John", "Mark", "Berkay")
+	//functions.CreateVariadic("John", "Mark", "Berkay")
 
-	names := []string{"Kelvin", "Dimitar", "Berkay", "Alex", "Mauro"}
-	functions.CreateVariadic(names...) // 3 dots are important here.
+	//names := []string{"Kelvin", "Dimitar", "Berkay", "Alex", "Mauro"}
+	//functions.CreateVariadic(names...) // 3 dots are important here.
+
+	//maps.CreateMap()
+
+	maps.IterateMaps()
 
 }
 
