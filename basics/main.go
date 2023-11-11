@@ -7,7 +7,8 @@ import (
 	//"basics/arrays"
 	//"basics/slices"
 	//"basics/functions"
-	"basics/maps"
+	//"basics/maps"
+	"basics/structs"
 	"fmt"
 )
 
@@ -41,7 +42,9 @@ func main() {
 
 	//maps.CreateMap()
 
-	maps.IterateMaps()
+	//maps.IterateMaps()
+
+	structs.CreateStruct()
 
 }
 

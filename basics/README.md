@@ -9,3 +9,5 @@
 - Slices
 - Functions
 - Maps
+- Structs
+- 
