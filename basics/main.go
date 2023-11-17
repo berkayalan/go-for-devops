@@ -8,7 +8,8 @@ import (
 	//"basics/slices"
 	//"basics/functions"
 	//"basics/maps"
-	"basics/structs"
+	//"basics/structs"
+	"basics/pointers"
 	"fmt"
 )
 
@@ -44,7 +45,10 @@ func main() {
 
 	//maps.IterateMaps()
 
-	structs.CreateStruct()
+	//structs.CreateStruct()
+
+	num := 169
+	pointers.PointerExtractor(num)
 
 }
 
