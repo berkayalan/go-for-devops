@@ -34,6 +34,8 @@ func CreateStruct() {
 	user1.job = "Cloud Engineer"
 	user1.phonenumber = "+44 123456789"
 
+	// or we can create like user1 := {"berkayalan","berkayalan.mail@gmail.com",1996,"Cloud Engineer","+44 123456789"}
+
 	fmt.Println(user1)
 
 }
