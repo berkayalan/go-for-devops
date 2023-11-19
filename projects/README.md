@@ -1,4 +1,4 @@
-# Proojects
+# Projects
 
 **Subjects**
 
