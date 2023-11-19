@@ -42,4 +42,6 @@ func CreateSwitch(month int) {
 		fmt.Println("Not a month!") // The default keyword specifies some code to run if there is no case match.
 	}
 
+	// All the case values should have the same type as the switch expression. Otherwise, the compiler will raise an error.
+
 }

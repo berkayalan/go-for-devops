@@ -3,7 +3,7 @@ package main
 import (
 	"basics/variables"
 	//"basics/conditionals"
-	switchstatement "basics/switch_statement"
+	//switchstatement "basics/switch_statement"
 	//"basics/loops"
 	//"basics/arrays"
 	//"basics/slices"
@@ -11,7 +11,9 @@ import (
 	//"basics/maps"
 	//"basics/structs"
 	//"basics/pointers"
+	"basics/goroutines"
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -22,7 +24,7 @@ func main() {
 
 	//conditionals.CheckCondition()
 
-	switchstatement.CreateSwitch(15)
+	//switchstatement.CreateSwitch(15)
 
 	//loops.YearCalculator()
 
@@ -52,6 +54,11 @@ func main() {
 
 	//num := 169
 	//pointers.PointerExtractor(num)
+
+	go goroutines.Greetings("Berkay") // write go before the function to invoke it as a goroutine.
+	go goroutines.Greetings("Michel")
+	// Wait for goroutines to finish before main goroutine ends
+	time.Sleep(time.Second)
 
 }
 
