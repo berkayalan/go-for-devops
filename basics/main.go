@@ -2,14 +2,15 @@ package main
 
 import (
 	"basics/variables"
-	// "basics/conditionals"
+	//"basics/conditionals"
+	switchstatement "basics/switch_statement"
 	//"basics/loops"
 	//"basics/arrays"
 	//"basics/slices"
 	//"basics/functions"
 	//"basics/maps"
 	//"basics/structs"
-	"basics/pointers"
+	//"basics/pointers"
 	"fmt"
 )
 
@@ -20,6 +21,8 @@ func main() {
 	//VariablesFunction()
 
 	//conditionals.CheckCondition()
+
+	switchstatement.CreateSwitch(15)
 
 	//loops.YearCalculator()
 
@@ -47,8 +50,8 @@ func main() {
 
 	//structs.CreateStruct()
 
-	num := 169
-	pointers.PointerExtractor(num)
+	//num := 169
+	//pointers.PointerExtractor(num)
 
 }
 
