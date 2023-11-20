@@ -11,9 +11,9 @@ import (
 	//"basics/maps"
 	//"basics/structs"
 	//"basics/pointers"
-	"basics/goroutines"
+	//"basics/goroutines"
+	"basics/interface_module"
 	"fmt"
-	"time"
 )
 
 func main() {
@@ -55,10 +55,12 @@ func main() {
 	//num := 169
 	//pointers.PointerExtractor(num)
 
-	go goroutines.Greetings("Berkay") // write go before the function to invoke it as a goroutine.
-	go goroutines.Greetings("Michel")
+	//go goroutines.Greetings("Berkay") // write go before the function to invoke it as a goroutine.
+	//go goroutines.Greetings("Michel")
 	// Wait for goroutines to finish before main goroutine ends
-	time.Sleep(time.Second)
+	//time.Sleep(time.Second)
+
+	interface_module.UserInterface()
 
 }
 

@@ -35,6 +35,7 @@ func main() {
 	router.POST("/products", CreateProduct)
 	router.PATCH("/activateproduct", MakeProductActive)
 	router.PATCH("/inactivateproduct", MakeProductPassive)
+	//router.PATCH("/filter", ReturnFilteredProducts)
 	router.Run("localhost:8080")
 
 }
@@ -128,3 +129,31 @@ func MakeProductPassive(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{"message": "Product inactivated!"})
 
 }
+
+/*
+func FilterProducts(isactive bool) (*product, error) {
+	for i, b := range products {
+		if b.Active == isactive {
+			return &products[i], nil
+		}
+	}
+
+	if isactive {
+		return nil, errors.New("There is no active product")
+	} else {
+		return nil, errors.New("There is no inactive product")
+	}
+}
+
+func ReturnFilteredProducts(c *gin.Context) {
+	isactive := c.Param("isactive")
+	productlist, err := GetProductDetails(isactive)
+
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Product Not Found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, productlist)
+}
+*/
