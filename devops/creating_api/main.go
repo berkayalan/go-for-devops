@@ -3,8 +3,9 @@ package main
 // We will use gin gonic module here: https://github.com/gin-gonic/gin
 
 import (
-	//"errors"
+	"errors"
 	"net/http"
+
 	//"vendor/golang.org/x/net/route"
 	"github.com/gin-gonic/gin"
 )
@@ -26,8 +27,42 @@ var products = []product{
 	{ProductCode: "53242635", ProductName: "WOW Skin Science Vitamin C Serum for Skin whitenening", MainCategory: "Beauty & health", SubCategory: "Beauty & Grooming", Price: 219.99, Brand: "WOW", Active: false},
 }
 
+func main() {
+
+	router := gin.Default()
+	router.GET("/products", GetProducts)
+	router.GET("/productdetails/:id", ReturnProductDetails)
+	router.POST("/products", CreateProduct)
+	router.PATCH("/activateproduct", MakeProductActive)
+	router.PATCH("/inactivateproduct", MakeProductPassive)
+	router.Run("localhost:8080")
+
+}
+
 func GetProducts(c *gin.Context) {
 	c.JSON(http.StatusOK, products)
+}
+
+func GetProductDetails(id string) (*product, error) {
+	for i, b := range products {
+		if b.ProductCode == id {
+			return &products[i], nil
+		}
+	}
+
+	return nil, errors.New("Product Not Found")
+}
+
+func ReturnProductDetails(c *gin.Context) {
+	id := c.Param("id")
+	product, err := GetProductDetails(id)
+
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Product Not Found"})
+		return
+	}
+
+	c.JSON(http.StatusOK, product)
 }
 
 func CreateProduct(c *gin.Context) {
@@ -42,11 +77,54 @@ func CreateProduct(c *gin.Context) {
 
 }
 
-func main() {
+func MakeProductActive(c *gin.Context) {
+	id, ok := c.GetQuery("id")
 
-	router := gin.Default()
-	router.GET("/products", GetProducts)
-	router.POST("/products", CreateProduct)
-	router.Run("localhost:8080")
+	if !ok {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Missing ID Query Parameter"})
+		return
+	}
+
+	product, err := GetProductDetails(id)
+
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Product Not Found"})
+		return
+	}
+
+	if product.Active {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Product Already Active!"})
+		return
+	}
+
+	product.Active = true
+	c.JSON(http.StatusOK, product)
+	c.JSON(http.StatusOK, gin.H{"message": "Product activated!"})
+
+}
+
+func MakeProductPassive(c *gin.Context) {
+	id, ok := c.GetQuery("id")
+
+	if !ok {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Missing ID Query Parameter"})
+		return
+	}
+
+	product, err := GetProductDetails(id)
+
+	if err != nil {
+		c.JSON(http.StatusNotFound, gin.H{"message": "Product Not Found"})
+		return
+	}
+
+	if !product.Active {
+		c.JSON(http.StatusBadRequest, gin.H{"message": "Product Already Inactive!"})
+		return
+	}
+
+	product.Active = false
+	c.JSON(http.StatusOK, product)
+	c.JSON(http.StatusOK, gin.H{"message": "Product inactivated!"})
 
 }
