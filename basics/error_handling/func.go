@@ -28,3 +28,18 @@ func OpenFile() {
 		fmt.Println(file.Name())
 	}
 }
+
+func NumberCheck(num interface{}) {
+	number, ok := num.(int)
+	fmt.Println(number, ok)
+}
+
+func GetNumber() {
+	var number1 interface{} = 7
+
+	NumberCheck(number1)
+
+	var number2 interface{} = "Berkay"
+
+	NumberCheck(number2)
+}

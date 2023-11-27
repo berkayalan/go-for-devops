@@ -67,7 +67,9 @@ func main() {
 	//result := defers.AgeCheck(2009)
 	//fmt.Println(result)
 
-	error_handling.OpenFile()
+	//error_handling.OpenFile()
+	//error_handling.GetNumber()
+	error_handling.PredictNumber()
 
 }
 
