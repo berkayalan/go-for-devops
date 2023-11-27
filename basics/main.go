@@ -13,7 +13,8 @@ import (
 	//"basics/pointers"
 	//"basics/goroutines"
 	//"basics/interface_module"
-	"basics/defers"
+	//"basics/defers"
+	"basics/error_handling"
 	"fmt"
 )
 
@@ -63,8 +64,10 @@ func main() {
 
 	//interface_module.UserInterface()
 
-	result := defers.AgeCheck(2009)
-	fmt.Println(result)
+	//result := defers.AgeCheck(2009)
+	//fmt.Println(result)
+
+	error_handling.OpenFile()
 
 }
 

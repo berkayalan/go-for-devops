@@ -14,6 +14,8 @@
 - Pointers
 - Goroutines
 - Interfaces
+- Defer Statement
+- Error Handling
 
 
 **Resources**
