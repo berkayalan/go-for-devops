@@ -12,7 +12,8 @@ import (
 	//"basics/structs"
 	//"basics/pointers"
 	//"basics/goroutines"
-	"basics/interface_module"
+	//"basics/interface_module"
+	"basics/defers"
 	"fmt"
 )
 
@@ -60,7 +61,10 @@ func main() {
 	// Wait for goroutines to finish before main goroutine ends
 	//time.Sleep(time.Second)
 
-	interface_module.UserInterface()
+	//interface_module.UserInterface()
+
+	result := defers.AgeCheck(2009)
+	fmt.Println(result)
 
 }
 
