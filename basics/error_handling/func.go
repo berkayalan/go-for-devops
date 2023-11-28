@@ -35,6 +35,7 @@ func NumberCheck(num interface{}) {
 }
 
 func GetNumber() {
+
 	var number1 interface{} = 7
 
 	NumberCheck(number1)

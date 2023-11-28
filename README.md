@@ -7,6 +7,7 @@ This repo contains golang Lectures and practises for devops. I will add new stuf
 - Basics
 - Project Examples
 - Devops Examples
+- AWS Implementations
 
 **Notes**
 
