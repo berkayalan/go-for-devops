@@ -10,18 +10,18 @@ func Predictor(prediction int) (string, error) {
 	correct_number := 55
 
 	if prediction < 1 || prediction > 1000 {
-		return "", errors.New("Please enter a number between 1 and 1000")
+		return "", errors.New("please enter a number between 1 and 1000")
 	}
 
 	if prediction > correct_number {
-		return "Please enter a smaller prediction", nil
+		return "please enter a smaller prediction", nil
 	}
 
 	if prediction < correct_number {
-		return "Please enter a bigger prediction", nil
+		return "please enter a bigger prediction", nil
 	}
 
-	return "You predicted correctly!", nil
+	return "you predicted correctly!", nil
 
 }
 

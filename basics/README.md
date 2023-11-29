@@ -16,6 +16,7 @@
 - Interfaces
 - Defer Statement
 - Error Handling
+- String Functions
 
 
 **Resources**

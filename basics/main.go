@@ -14,7 +14,8 @@ import (
 	//"basics/goroutines"
 	//"basics/interface_module"
 	//"basics/defers"
-	"basics/error_handling"
+	//"basics/error_handling"
+	"basics/strings"
 	"fmt"
 )
 
@@ -70,7 +71,10 @@ func main() {
 	//error_handling.OpenFile()
 	//error_handling.GetNumber()
 	//error_handling.PredictNumber()
-	fmt.Println(error_handling.EnterCheck(2009, 12))
+	//fmt.Println(error_handling.EnterCheck(2009, 12))
+
+	//strings.CreateString()
+	strings.StringAdvanced()
 
 }
 

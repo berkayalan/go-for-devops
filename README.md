@@ -18,3 +18,4 @@ This repo contains golang Lectures and practises for devops. I will add new stuf
 5. If a variable should have a fixed value that cannot be changed, we can use the `const` keyword.
 6. The `go build` command compiles the packages, along with their dependencies, but it doesn't install the results.
 7. The `go install` command compiles and installs the packages.
+8. Golang is compiled and case sensitive language.
