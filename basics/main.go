@@ -69,7 +69,8 @@ func main() {
 
 	//error_handling.OpenFile()
 	//error_handling.GetNumber()
-	error_handling.PredictNumber()
+	//error_handling.PredictNumber()
+	fmt.Println(error_handling.EnterCheck(2009, 12))
 
 }
 
