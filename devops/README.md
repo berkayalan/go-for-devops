@@ -2,5 +2,6 @@
 
 **Subjects**
 
-- Creating APIs
+- Creating APIs with gin
+- Contexts in Go
 - 
