@@ -19,7 +19,7 @@ func Greetings(ctx context.Context) {
 
 func main() {
 
-	ctx := context.Background()
+	ctx := context.Background() // It does not have to be "ctx", can be any name.
 
 	ctx = context.WithValue(ctx, "name", "Berkay") // "myKey", "myValue"
 
