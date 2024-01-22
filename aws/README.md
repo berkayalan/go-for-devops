@@ -3,6 +3,7 @@
 **Subjects**
 
 - Creating Pre-Signed URLs for Amazon S3 Buckets
+- Creating Lambda functions with Golang
 
 
 
