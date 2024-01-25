@@ -47,6 +47,5 @@ A Lambda function written in Go is authored as a Go executable. In our Lambda fu
 # Resources
 
 - [Deploy Go Lambda functions with .zip file archives](https://docs.aws.amazon.com/lambda/latest/dg/golang-package.html)
-- []()
-- []()
-- []()
+- [AWS Lambda function handler in Go](https://docs.aws.amazon.com/lambda/latest/dg/golang-handler.html)
+- [A Golang Lambda Function - Youtube](https://www.youtube.com/watch?v=KaydW7FO-Pw&ab_channel=CloudCasts)
