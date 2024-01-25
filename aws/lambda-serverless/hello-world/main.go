@@ -1,8 +1,8 @@
 package main
 
 import (
-	"context"
 	"fmt"
+	"os"
 
 	"github.com/aws/aws-lambda-go/lambda"
 )
@@ -13,19 +13,28 @@ type lambdaParameters struct {
 }
 
 func main() {
-	lambda.Start(HandleRequest)
+
+	lambdaFunctionName := os.Getenv("AWS_LAMBDA_FUNCTION_NAME") // This is to test locally.
+
+	if lambdaFunctionName != "" { // if the environment variable is set, assume that we are running in lambda
+		lambda.Start(HandleRequest)
+	} else {
+		params := lambdaParameters{
+			Message: "Hello World from Berkay",
+			Count:   2,
+		}
+
+		HandleRequest(params)
+	}
 }
 
-func HandleRequest(ctx context.Context, event *lambdaParameters) (*string, error) {
-	if event == nil {
-		return nil, fmt.Errorf("received nil event")
-	}
+func HandleRequest(event lambdaParameters) (*string, error) {
 
 	for index := 0; index < event.Count; index++ {
-		fmt.Println("Hello %s!", event.Message)
+		fmt.Println(event.Message)
 	}
 
-	message := fmt.Sprintf("Hello %s!", event.Message)
+	message := fmt.Sprintf(event.Message)
 
 	return &message, nil
 }

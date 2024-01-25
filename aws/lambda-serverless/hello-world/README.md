@@ -36,9 +36,17 @@ A Lambda function written in Go is authored as a Go executable. In our Lambda fu
 
 # Important Notes
 
-- Before uploading the code to the AWS, we need to compile it, so lambda can understand our main code. To do that, type  `go build main.go`.
+- Before uploading the code to the AWS, we need to compile it, so lambda can understand our main code. To do that, type  `GOOS=linux go build main.go`. OS-only runtimes support both arm64 and x86_64. That's why we need to do that in linux.
 
 - In order to upload our executable file to AWS, we need to zip it via `zip main.zip main`.
 
 - Then go to AWS console and upload our zip file to the Lambda.
 
+- In order to test the code locally, create a `.env` file in your main directory and create a parameter for `AWS_LAMBDA_FUNCTION_NAME`. This can be any value. Then call this variable via `lambdaFunctionName := os.Getenv("AWS_LAMBDA_FUNCTION_NAME")`
+
+# Resources
+
+- [Deploy Go Lambda functions with .zip file archives](https://docs.aws.amazon.com/lambda/latest/dg/golang-package.html)
+- []()
+- []()
+- []()
