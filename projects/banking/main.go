@@ -93,37 +93,29 @@ func main() {
 	fmt.Printf("%v\n ", all_tenants) */
 
 	transaction := GetTransaction()
+	choose_count := 1
 
-	choose_count := 0
-
-	for choose_count <= 3 {
-		for transaction > 0 && transaction <= 5 {
-			if transaction == 5 {
-				choose_count += 1
-				if choose_count < 3 {
-					fmt.Println("You made a wrong choose! Please try again.")
-					transaction = GetTransaction()
-					continue
-				} else if choose_count == 3 {
-					fmt.Println("You made 3 wrong choose! Your account is suspected!")
-					break
-				}
-				break
-			} else {
-				switch transaction {
-				case 1:
-					fmt.Println("1")
-					continue
-				case 2:
-					fmt.Println("2")
-				case 3:
-					fmt.Println("3")
-				case 4:
-					break
-				}
+	for choose_count < 3 {
+		if transaction == 5 {
+			choose_count += 1
+			fmt.Printf("Your Selection is %v\n", transaction)
+			fmt.Println("Your selection is wrong. Please select again")
+			fmt.Println(choose_count)
+			transaction = GetTransaction()
+			continue
+		} else {
+			switch transaction {
+			case 1:
+				fmt.Println("1")
+			case 2:
+				fmt.Println("2")
+			case 3:
+				fmt.Println("3")
+			case 4:
 				break
 			}
 		}
+		// break
 	}
 }
 
