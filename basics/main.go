@@ -1,22 +1,7 @@
 package main
 
 import (
-	"basics/variables"
-	//"basics/conditionals"
-	//switchstatement "basics/switch_statement"
-	//"basics/loops"
-	//"basics/arrays"
-	//"basics/slices"
-	//"basics/functions"
-	//"basics/maps"
-	//"basics/structs"
-	//"basics/pointers"
-	//"basics/goroutines"
-	//"basics/interface_module"
-	//"basics/defers"
-	//"basics/error_handling"
-	"basics/strings"
-	"fmt"
+	"basics/interface_module"
 )
 
 func main() {
@@ -64,6 +49,7 @@ func main() {
 	//time.Sleep(time.Second)
 
 	//interface_module.UserInterface()
+	interface_module.AccountTransaction()
 
 	//result := defers.AgeCheck(2009)
 	//fmt.Println(result)
@@ -74,7 +60,7 @@ func main() {
 	//fmt.Println(error_handling.EnterCheck(2009, 12))
 
 	//strings.CreateString()
-	strings.StringAdvanced()
+	//strings.StringAdvanced()
 
 }
 
@@ -82,16 +68,16 @@ func VariablesFunction() {
 
 	// This is how we invoke a function in a package
 
-	fmt.Println("\nString Variables")
-	variables.StringCreator()
+	// fmt.Println("\nString Variables")
+	// variables.StringCreator()
 
-	fmt.Println("\nInteger Variables")
-	variables.IntegerCreator()
+	// fmt.Println("\nInteger Variables")
+	// variables.IntegerCreator()
 
-	fmt.Println("\nFloat Variables")
-	variables.FloatCreator()
+	// fmt.Println("\nFloat Variables")
+	// variables.FloatCreator()
 
-	fmt.Println("\nBoolean Variables")
-	variables.BooleanCreator()
+	// fmt.Println("\nBoolean Variables")
+	// variables.BooleanCreator()
 
 }
