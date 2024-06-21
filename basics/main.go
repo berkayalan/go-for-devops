@@ -1,8 +1,6 @@
 package main
 
-import (
-	"basics/interface_module"
-)
+import "basics/pointers"
 
 func main() {
 
@@ -40,8 +38,10 @@ func main() {
 
 	//structs.CreateStruct()
 
-	//num := 169
-	//pointers.PointerExtractor(num)
+	// num := 169
+	// pointers.PointerExtractor(num)
+	// pointers.PointersInSlice()
+	pointers.PointersInMap()
 
 	//go goroutines.Greetings("Berkay") // write go before the function to invoke it as a goroutine.
 	//go goroutines.Greetings("Michel")
@@ -49,7 +49,7 @@ func main() {
 	//time.Sleep(time.Second)
 
 	//interface_module.UserInterface()
-	interface_module.AccountTransaction()
+	// interface_module.AccountTransaction()
 
 	//result := defers.AgeCheck(2009)
 	//fmt.Println(result)
