@@ -41,7 +41,8 @@ func main() {
 	// num := 169
 	// pointers.PointerExtractor(num)
 	// pointers.PointersInSlice()
-	pointers.PointersInMap()
+	// pointers.PointersInMap()
+	pointers.CheckPointer()
 
 	//go goroutines.Greetings("Berkay") // write go before the function to invoke it as a goroutine.
 	//go goroutines.Greetings("Michel")

@@ -16,7 +16,7 @@ func PointerExtractor(num int) {
 	fmt.Printf("The Number is %v \n", num)
 
 	// declaration of pointer with *
-	var p *int
+	var p *int // this is passing by referance.
 
 	// initialization of pointer with &
 	p = &num
