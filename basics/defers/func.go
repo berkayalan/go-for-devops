@@ -5,6 +5,15 @@ import (
 	"time"
 )
 
+func DeferUsage() {
+	defer fmt.Println("First")
+	defer fmt.Println("Second")
+	fmt.Println("Third")
+	defer fmt.Println("Fourth") // As seen, it puts all defer statements to an reverse order. LIFO
+
+	fmt.Println("We're learning defers.")
+}
+
 func AgeCheck(birthyear int) string {
 
 	/*
