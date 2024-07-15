@@ -1,6 +1,6 @@
 package main
 
-import "basics/pointers"
+import "basics/defers"
 
 func main() {
 
@@ -42,7 +42,7 @@ func main() {
 	// pointers.PointerExtractor(num)
 	// pointers.PointersInSlice()
 	// pointers.PointersInMap()
-	pointers.CheckPointer()
+	// pointers.CheckPointer()
 
 	//go goroutines.Greetings("Berkay") // write go before the function to invoke it as a goroutine.
 	//go goroutines.Greetings("Michel")
@@ -54,6 +54,10 @@ func main() {
 
 	//result := defers.AgeCheck(2009)
 	//fmt.Println(result)
+	// defers.DeferUsage()
+	// defers.SendPanic()
+	// defers.OutofBound()
+	defers.RecoverPanic()
 
 	//error_handling.OpenFile()
 	//error_handling.GetNumber()
