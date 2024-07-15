@@ -55,7 +55,9 @@ func main() {
 	//result := defers.AgeCheck(2009)
 	//fmt.Println(result)
 	// defers.DeferUsage()
-	defers.SendPanic()
+	// defers.SendPanic()
+	// defers.OutofBound()
+	defers.RecoverPanic()
 
 	//error_handling.OpenFile()
 	//error_handling.GetNumber()
