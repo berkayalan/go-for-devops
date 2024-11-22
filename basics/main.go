@@ -1,6 +1,8 @@
 package main
 
-import "basics/defers"
+import (
+	timebasics "basics/time"
+)
 
 func main() {
 
@@ -57,7 +59,7 @@ func main() {
 	// defers.DeferUsage()
 	// defers.SendPanic()
 	// defers.OutofBound()
-	defers.RecoverPanic()
+	// defers.RecoverPanic()
 
 	//error_handling.OpenFile()
 	//error_handling.GetNumber()
@@ -66,6 +68,8 @@ func main() {
 
 	//strings.CreateString()
 	//strings.StringAdvanced()
+
+	timebasics.CallNow()
 
 }
 
