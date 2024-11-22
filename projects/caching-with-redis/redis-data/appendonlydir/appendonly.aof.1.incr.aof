@@ -1,0 +1,33 @@
+*2
+$6
+SELECT
+$1
+0
+*3
+$3
+set
+$4
+name
+$6
+Berkay
+*3
+$3
+set
+$4
+name
+$6
+Berkay
+*3
+$3
+set
+$4
+user
+$56
+{"Name":"Berkay","Age":28,"Occupation":"Cloud Engineer"}
+*3
+$3
+set
+$36
+228ad61c-dfda-490f-b5f3-44dcebb12aaa
+$100
+{"ID":"228ad61c-dfda-490f-b5f3-44dcebb12aaa","Name":"Berkay","Age":28,"Occupation":"Cloud Engineer"}
