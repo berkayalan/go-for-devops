@@ -62,3 +62,10 @@ func TestWaitGroup() {
 func MakeUppercase(word string) {
 	fmt.Println(strings.ToUpper(word))
 }
+
+func Greetings(name string) {
+	for i := 0; i < len(name); i++ {
+		fmt.Println("Welcome ", name)
+	}
+
+}

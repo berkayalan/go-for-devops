@@ -50,8 +50,9 @@ func main() {
 	//go goroutines.Greetings("Michel")
 	// Wait for goroutines to finish before main goroutine ends
 	//time.Sleep(time.Second)
-	goroutines.Test()
-	goroutines.TestWaitGroup()
+	// goroutines.Test()
+	// goroutines.TestWaitGroup()
+	goroutines.Say()
 
 	//interface_module.UserInterface()
 	// interface_module.AccountTransaction()
