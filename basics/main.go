@@ -1,6 +1,8 @@
 package main
 
-import "basics/defers"
+import (
+	"basics/goroutines"
+)
 
 func main() {
 
@@ -48,6 +50,8 @@ func main() {
 	//go goroutines.Greetings("Michel")
 	// Wait for goroutines to finish before main goroutine ends
 	//time.Sleep(time.Second)
+	goroutines.Test()
+	goroutines.TestWaitGroup()
 
 	//interface_module.UserInterface()
 	// interface_module.AccountTransaction()
@@ -57,7 +61,7 @@ func main() {
 	// defers.DeferUsage()
 	// defers.SendPanic()
 	// defers.OutofBound()
-	defers.RecoverPanic()
+	// defers.RecoverPanic()
 
 	//error_handling.OpenFile()
 	//error_handling.GetNumber()
