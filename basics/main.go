@@ -1,7 +1,7 @@
 package main
 
 import (
-	"basics/goroutines"
+	bufferedchannels "basics/buffered_channels"
 )
 
 func main() {
@@ -52,7 +52,15 @@ func main() {
 	//time.Sleep(time.Second)
 	// goroutines.Test()
 	// goroutines.TestWaitGroup()
-	goroutines.Say()
+	// goroutines.Say()
+
+	// unbufferedchannels.UnbufferedChannel()
+	// unbufferedchannels.UnbufferedChannelMultiple()
+
+	// bufferedchannels.BufferedChannel()
+	// bufferedchannels.ReadOnlyChannel()
+	// bufferedchannels.WriteOnlyChannel()
+	bufferedchannels.SelectStatement()
 
 	//interface_module.UserInterface()
 	// interface_module.AccountTransaction()
