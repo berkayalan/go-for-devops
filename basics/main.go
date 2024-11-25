@@ -1,6 +1,8 @@
 package main
 
-import unbufferedchannels "basics/unbuffered_channels"
+import (
+	bufferedchannels "basics/buffered_channels"
+)
 
 func main() {
 
@@ -53,7 +55,12 @@ func main() {
 	// goroutines.Say()
 
 	// unbufferedchannels.UnbufferedChannel()
-	unbufferedchannels.UnbufferedChannelMultiple()
+	// unbufferedchannels.UnbufferedChannelMultiple()
+
+	// bufferedchannels.BufferedChannel()
+	// bufferedchannels.ReadOnlyChannel()
+	// bufferedchannels.WriteOnlyChannel()
+	bufferedchannels.SelectStatement()
 
 	//interface_module.UserInterface()
 	// interface_module.AccountTransaction()
