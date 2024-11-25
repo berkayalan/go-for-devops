@@ -18,6 +18,9 @@ func SelectStatement() {
 	chan1 := make(chan string)
 	chan2 := make(chan string)
 
+	var data1 string
+	var data2 string
+
 	go func() {
 		time.Sleep(time.Second * 5)
 		chan1 <- "Berkay"
@@ -28,14 +31,11 @@ func SelectStatement() {
 		chan2 <- "Alan"
 	}()
 
-	var data1 string
-	var data2 string
-
 	for len(data1) == 0 || len(data2) == 0 {
 		select {
-		case data1 := <-chan1:
+		case data1 = <-chan1:
 			fmt.Println("Data taken from channel 1: ", data1)
-		case data2 := <-chan2:
+		case data2 = <-chan2:
 			fmt.Println("Data taken from channel 2: ", data2)
 		default:
 			fmt.Println("No data yet")
