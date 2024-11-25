@@ -13,6 +13,8 @@
 - Structs
 - Pointers
 - Goroutines
+- Buffered Channels
+- Unbuffered Channels
 - Interfaces
 - Defer Statement
 - Error Handling
