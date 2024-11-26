@@ -1,7 +1,7 @@
 package main
 
 import (
-	bufferedchannels "basics/buffered_channels"
+	"basics/contexts"
 )
 
 func main() {
@@ -60,7 +60,7 @@ func main() {
 	// bufferedchannels.BufferedChannel()
 	// bufferedchannels.ReadOnlyChannel()
 	// bufferedchannels.WriteOnlyChannel()
-	bufferedchannels.SelectStatement()
+	// bufferedchannels.SelectStatement()
 
 	//interface_module.UserInterface()
 	// interface_module.AccountTransaction()
@@ -79,6 +79,8 @@ func main() {
 
 	//strings.CreateString()
 	//strings.StringAdvanced()
+
+	contexts.CreateUser("berkayalan")
 
 }
 

@@ -19,6 +19,7 @@
 - Defer Statement
 - Error Handling
 - String Functions
+- Contexts
 
 
 **Resources**
