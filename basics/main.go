@@ -1,8 +1,6 @@
 package main
 
-import (
-	"basics/contexts"
-)
+import "basics/contexts"
 
 func main() {
 
@@ -80,7 +78,8 @@ func main() {
 	//strings.CreateString()
 	//strings.StringAdvanced()
 
-	contexts.CreateUser("berkayalan")
+	// contexts.CreateUser("berkayalan")
+	contexts.CreateUserActivity("berkayalan")
 
 }
 
