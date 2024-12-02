@@ -20,10 +20,31 @@ func CreateUser(UserName string) {
 
 	ctx = context.WithValue(ctx, "Username", UserName)
 
-	UserDetails(ctx)
+	StringUser(ctx)
 }
 
-func UserDetails(ctx context.Context) {
+func StringUser(ctx context.Context) {
 	fmt.Printf("User created with username %s at %s", ctx.Value("Username"), time.Now().String())
+
+}
+
+func CreateUserActivity(UserName string) {
+	ctx, cancel := context.WithTimeout(context.Background(), 2*time.Second)
+
+	defer cancel()
+
+	go StringUserActivity(ctx)
+
+	select {
+	case <-ctx.Done():
+		fmt.Println("Task timed out") // the operation is terminated prematurely, resulting in a timeout.
+	}
+}
+
+func StringUserActivity(ctx context.Context) {
+
+	time.Sleep(time.Second * 3)
+
+	fmt.Printf("User made an activity at %s", time.Now().String())
 
 }
